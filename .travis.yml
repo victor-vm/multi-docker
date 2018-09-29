@@ -12,17 +12,17 @@ script:
 
 
 after_success:
-  - docker build -t victor/multi-client ./client
-  - docker build -t victor/multi-nginx ./nginx
-  - docker build -t victor/multi-server ./server
-  - docker build -t victor/multi-worker ./worker
+  - docker build -t victor18/multi-client ./client
+  - docker build -t victor18/multi-nginx ./nginx
+  - docker build -t victor18/multi-server ./server
+  - docker build -t victor18/multi-worker ./worker
   #Log in to Docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push to dockerhub
-  - docker push victor/multi-client
-  - docker push victor/multi-nginx
-  - docker push victor/multi-server
-  - docker push victor/multi-worker
+  - docker push victor18/multi-client
+  - docker push victor18/multi-nginx
+  - docker push victor18/multi-server
+  - docker push victor18/multi-worker
 
 
 
