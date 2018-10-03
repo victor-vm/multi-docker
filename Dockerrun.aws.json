@@ -1,4 +1,5 @@
-EBDockerrunVersion" : 2,
+{
+    "AWSEBDockerrunVersion" : 2,
     "containerDefinitions" : [
         {
             "name" : "client",
@@ -35,6 +36,6 @@ EBDockerrunVersion" : 2,
             "links" : ["client", "server"],
             "memory": 128
             
-        }
+        },
     ]
 }
