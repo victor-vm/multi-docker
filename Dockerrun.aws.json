@@ -35,6 +35,6 @@ EBDockerrunVersion" : 2,
             "links" : ["client", "server"],
             "memory": 128
             
-        },
+        }
     ]
 }
